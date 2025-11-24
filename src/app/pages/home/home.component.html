@@ -27,46 +27,82 @@
 
 
 
-<!--  Card menu  -->
-
-
-
-    <div class=" text-center space-y-16 mt-16">
-      <div class="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:items-center lg:gap-x-8">
-        <div class=" lg:col-span-5 lg:col-start-1 lg:row-start-1 lg:mt-0 xl:col-span-4">
-          <h3 class="text-3xl font-bold tracking-tight mb-14 text-gray-900">Original & Sustainable</h3>
-          <p class="mt-2 text-xl leading-relaxed text-gray-500">Discover our exclusive range of original and sustainable furniture pieces, each meticulously handcrafted to 
+<!-- Card menu -->
+<div class="py-16 lg:py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- First Card - Original & Sustainable -->
+    <div class="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:items-center lg:gap-12 xl:gap-16 mb-24 lg:mb-32">
+      <!-- Text Content -->
+      <div class="mt-8 lg:mt-0 lg:col-span-5 lg:col-start-1 lg:row-start-1 xl:col-span-4">
+        <div class="space-y-6">
+          <h3 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 font-playfair">
+            Original & Sustainable
+          </h3>
+          <div class="w-20 h-1 bg-gradient-to-r from-gray-400 to-transparent"></div>
+          <p class="text-lg sm:text-xl leading-relaxed text-gray-600 font-light">
+            Discover our exclusive range of original and sustainable furniture pieces, each meticulously handcrafted to 
             embody the distinctive vision of the artisans behind them. Every item in our collection is a testament to our commitment to 
             environmental responsibility, as we meticulously source and utilize non-toxic, eco-friendly materials such as repurposed wood and 
-            recycled glass. By prioritizing sustainability in our craftsmanship, we not only create stunning furniture, but also contribute to 
-            the preservation of our planet's natural resources, ensuring that every piece tells a story of artistry, sustainability, and timeless elegance.</p>
-        </div>
-        <div class="flex-auto lg:col-span-7 lg:col-start-6 lg:row-start-1 xl:col-span-8 xl:col-start-5">
-          <div class="aspect-h-3 aspect-w-5 overflow-hidden rounded-lg bg-gray-100">
-            <img src="/assets/images/menu1.jpg" alt="White canvas laptop sleeve with gray felt interior, silver zipper, and tan leather zipper pull." 
-            class="object-cover object-center"
-            [lazyLoad]="'assets/images/menu1.jpg'"
-            >
-          </div>
+            recycled glass.
+          </p>
+          <p class="text-lg sm:text-xl leading-relaxed text-gray-600 font-light">
+            By prioritizing sustainability in our craftsmanship, we not only create stunning furniture, but also contribute to 
+            the preservation of our planet's natural resources, ensuring that every piece tells a story of artistry, sustainability, and timeless elegance.
+          </p>
         </div>
       </div>
-      <div class="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:items-center lg:gap-x-8">
-        <div class="mt-6 lg:col-span-5 lg:col-start-8 lg:row-start-1 lg:mt-0 xl:col-span-4 xl:col-start-9">
-          <h3 class="text-3xl font-bold tracking-tight mb-14 text-gray-900">Gorgeous & Practical</h3>
-          <p class="mt-2 text-xl leading-relaxed text-gray-500">Discover furniture designed for real homes, where practicality meets stunning aesthetics. Our collection seamlessly combines 
-            functionality with undeniable beauty, ensuring each piece serves a practical purpose while exuding timeless allure. Experience the perfect blend 
-            of form and function as we redefine the essence of practical luxury, elevating your living space with enduring elegance and purpose.</p>
-        </div>
-        <div class="flex-auto lg:col-span-7 lg:col-start-1 lg:row-start-1 xl:col-span-8">
-          <div class="aspect-h-3 aspect-w-5 overflow-hidden rounded-lg bg-gray-100">
-            <img src="/assets/images/menu2.jpg" alt="Detail of zipper pull with tan leather and silver rivet." 
-            class="object-cover object-center"
-            [lazyLoad]="'assets/images/menu2.jpg'"
-            >
+      
+      <!-- Image -->
+      <div class="lg:col-span-7 lg:col-start-6 lg:row-start-1 xl:col-span-8 xl:col-start-5">
+        <div class="relative overflow-hidden rounded-2xl shadow-2xl group">
+          <div class="aspect-h-4 aspect-w-3 lg:aspect-h-3 lg:aspect-w-4">
+            <img src="/assets/images/menu1.jpg" 
+                 alt="Sustainable furniture design with natural materials"
+                 class="object-cover object-center w-full h-full transform group-hover:scale-105 transition-transform duration-700 ease-out"
+                 [lazyLoad]="'assets/images/menu1.jpg'">
           </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
         </div>
       </div>
     </div>
+
+    <!-- Second Card - Gorgeous & Practical -->
+    <div class="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:items-center lg:gap-12 xl:gap-16">
+      <!-- Text Content -->
+      <div class="mt-8 lg:mt-0 lg:col-span-5 lg:col-start-8 lg:row-start-1 xl:col-span-4 xl:col-start-9">
+        <div class="space-y-6">
+          <h3 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 font-playfair">
+            Gorgeous & Practical
+          </h3>
+          <div class="w-20 h-1 bg-gradient-to-r from-transparent to-gray-400 ml-auto"></div>
+          <p class="text-lg sm:text-xl leading-relaxed text-gray-600 font-light">
+            Discover furniture designed for real homes, where practicality meets stunning aesthetics. Our collection seamlessly combines 
+            functionality with undeniable beauty, ensuring each piece serves a practical purpose while exuding timeless allure.
+          </p>
+          <p class="text-lg sm:text-xl leading-relaxed text-gray-600 font-light">
+            Experience the perfect blend of form and function as we redefine the essence of practical luxury, elevating your living space 
+            with enduring elegance and purpose.
+          </p>
+        </div>
+      </div>
+      
+      <!-- Image -->
+      <div class="lg:col-span-7 lg:col-start-1 lg:row-start-1 xl:col-span-8">
+        <div class="relative overflow-hidden rounded-2xl shadow-2xl group">
+          <div class="aspect-h-4 aspect-w-3 lg:aspect-h-3 lg:aspect-w-4">
+            <img src="/assets/images/menu2.jpg" 
+                 alt="Practical and beautiful furniture design"
+                 class="object-cover object-center w-full h-full transform group-hover:scale-105 transition-transform duration-700 ease-out"
+                 [lazyLoad]="'assets/images/menu2.jpg'">
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
  
 
 
