@@ -1,7 +1,56 @@
-
 .gradient-text {
-  background: linear-gradient(to left, #4c4c4c, #f7f6f6, #f7f6f6,#4c4c4c, #f7f6f6, #f7f6f6);
+  background: linear-gradient(135deg, #f7f6f6 0%, #4c4c4c 25%, #f7f6f6 50%, #4c4c4c 75%, #f7f6f6 100%);
   background-size: 300% 300%;
   background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-  
+
+.animate-gradient {
+  animation: gradient-shift 3s ease infinite;
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Smooth transitions for mobile menu */
+.transform {
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Ensure proper z-index stacking */
+.fixed {
+  z-index: 50;
+}
+
+.bg-black {
+  z-index: 40;
+}
+
+/* Custom scrollbar for mobile menu */
+.overflow-y-auto {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+}
+
+.overflow-y-auto::-webkit-scrollbar {
+  width: 4px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+}
