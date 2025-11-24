@@ -1,0 +1,75 @@
+/* google-map.component.css */
+.google-map-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+/* Responsive height utilities */
+@media (max-width: 1024px) {
+  .google-map-container {
+    height: 400px;
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .google-map-container {
+    height: 350px;
+    min-height: 350px;
+  }
+}
+
+@media (max-width: 640px) {
+  .google-map-container {
+    height: 300px;
+    min-height: 300px;
+  }
+}
+
+/* Loading state */
+.google-map-container .loading {
+  opacity: 0.7;
+}
+
+/* Custom map controls */
+:host ::ng-deep .gm-control-active,
+:host ::ng-deep .gm-svpc,
+:host ::ng-deep .gm-style-mtc {
+  background: white !important;
+  border-radius: 8px !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1) !important;
+}
+
+:host ::ng-deep .gm-fullscreen-control,
+:host ::ng-deep .gm-zoom-control {
+  margin: 10px !important;
+}
+
+:host ::ng-deep .gm-style .gm-style-iw-c {
+  border-radius: 12px !important;
+  padding: 0 !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1) !important;
+}
+
+:host ::ng-deep .gm-style .gm-style-iw-t::after {
+  background: white !important;
+}
+
+/* Ensure map tiles are properly sized */
+:host ::ng-deep .gm-style img {
+  max-width: none !important;
+}
+
+/* Custom scrollbar for info window */
+:host ::ng-deep .gm-style .gm-style-iw {
+  overflow: hidden !important;
+}
+
+:host ::ng-deep .gm-style .gm-style-iw-d {
+  overflow: auto !important;
+  max-height: none !important;
+}

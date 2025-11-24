@@ -2,18 +2,19 @@
 
 
 <div class="grid grid-cols-1 gap-8">
-  <div class="relative h-screen flex justify-center items-center">
-    <img src="/assets/images/2.jpg" class="w-600 h-600 object-center shadow-lg rounded-lg" alt="Top Image">
-  </div>
-  <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-    <div class="relative">
+  <div class="relative flex items-center justify-center mx-auto 
+            w-full w-full h-[400px] sm:h-[500px] lg:h-full px-4 mt-10">
+  <img src="/assets/images/2.jpg"
+       class="w-full h-full object-cover shadow-lg rounded-lg"
+       alt="Top Image">
+</div>
 
-      <!-- google maps -->
-      <google-map></google-map>
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+    <div class="relative ">
+  <google-map class="w-full h-full"></google-map>
+</div>
     
-    </div>
-    
-    <div class="bg-white p-8 rounded-lg shadow-lg mr-20">
+    <div class="bg-white p-8 rounded-lg shadow-lg mr-20 mt-20">
       <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
           <div>
@@ -44,11 +45,3 @@
     </div>
   </div>
 </div>
-
-
-
-
-
-
-
- 
